@@ -1,0 +1,23 @@
+﻿<Window x:Class="CalculatorUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CalculatorUI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button Content="Calculate" HorizontalAlignment="Left" Click="Calculate" Margin="241,190,0,0" VerticalAlignment="Top" Height="27" Width="276"/>
+        <Label Content="" Name="Output" HorizontalAlignment="Left" Margin="242,263,0,0" VerticalAlignment="Top" Height="40" Width="275"/>
+        <Label Content=" " Name="Error" HorizontalAlignment="Left" Margin="293,89,0,0" VerticalAlignment="Top" Height="40" Width="448" RenderTransformOrigin="0.504,0.392"/>
+        <TextBox HorizontalAlignment="Left" Name="Number" Margin="304,134,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="213" Height="24"/>
+        <ComboBox HorizontalAlignment="Left" Name="Operator" Margin="136,81,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Content="+" IsSelected="True"></ComboBoxItem>
+            <ComboBoxItem Content="-"></ComboBoxItem>
+            <ComboBoxItem Content="/"></ComboBoxItem>
+            <ComboBoxItem Content="*"></ComboBoxItem>
+        </ComboBox>
+        <Label Content="Enter Number Here:" HorizontalAlignment="Left" Margin="184,133,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
